@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <img id="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoas9voCum_743mth89XNRcf2vo6mKeXatNtaJt32j9zuRIMS5ZajJc9R1Gl0A-fG1DxM&usqp=CAU"
+                alt="">
+            <ul>
+                <li> <a href="#"> Home</a> </li>
+                <li> <a href="#"> Contact</a> </li>
+                <li> <a href="about.html"> About</a> </li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="text">
+                <h2>It´s not just coffee <br> it´s <span>Star Bucks</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum officia voluptatem cum pariatur
+                    facilis temporibus repudiandae, modi corporis a repellendus quam. Est ipsam laudantium minus
+                    incidunt ipsa enim? Error, ab.
+                </p>
+                <button onclick="buy()">Learn More</button>
+            </div>
+
+            <div class="imagBox">
+                <img class="bucks" style="margin-top: 20px;" src="./images/img1.png" alt="">
+            </div>
+
+        </div>
+
+
+        <ul class="thumb">
+            <li class="li" onclick="imgSlide('./images/img1.png'), colorBack('#017143')">
+                <img src="./images/img1.png" alt="">
+            </li>
+            <li onclick="imgSlide('./images/img2.png'), colorBack('#eb7495')">
+                <img src="./images/img2.png" alt="">
+            </li>
+            <li onclick="imgSlide('./images/img3.png'), colorBack('#d752b1')">
+                <img src="./images/img3.png" alt="">
+            </li>
+
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlide(e) {
+            document.querySelector('.bucks').src = e
+        }
+
+        function colorBack(e) {
+            let circle = document.querySelector('.circle')
+            circle.style.background = e
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

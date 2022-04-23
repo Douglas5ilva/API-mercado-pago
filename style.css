@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #img {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    list-style: none;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+
+/*problema*/
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text{
+    position: relative;
+    max-width: 600px;
+}
+
+/*problema*/
+.content .text, h2{
+    color: #333;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox, span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .text, p{
+    color: #333;
+}
+
+button{
+    padding: 13px;
+    background: #017143;
+    color: #ffff;
+    border-radius: 40px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    padding: 13px;
+    color: #017143;
+    background: white;
+    border-radius: 20px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+}
+
+a{
+    color: #017143;
+}
+
+.content .imagBox{
+    width: 600px;
+    display: flex;
+    display: flex-end;
+    padding-right: 50px;
+    margin-bottom: 200px;
+}
+
+.content .imagBox, img{
+    max-width: 360px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5%;
+}
+
+.thumb li:hover{
+    transform: translateY(-20px);
+}
+
+.thumb li img{
+    max-width: 70px;
+}
+
+.circle{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(550px at right 700px);
+}
+
+.bucks{
+    width: 300px;
+}
