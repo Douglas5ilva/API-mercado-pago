@@ -6,6 +6,8 @@ const cors = require('cors')
 // TEST-8885132814834847-042318-aad32373acf521a849405ef2a551b331-1111716906
 app.use(cors())
 
+app.get('/', (req,res)=>{ res.send('Server is Running...') })
+
 app.post('/creat-order', async (req, res) => {
 
     var mercadopago = require('mercadopago');
