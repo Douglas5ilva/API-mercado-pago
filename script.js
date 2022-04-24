@@ -2,7 +2,8 @@
 
 async function buy(){
     await fetch('https://api-mercado-pago.vercel.app/creat-order', {
-       method:'post'
+       method:'post',
+       mode:'cors'
     })
     .then(res=>res)
     .then(data=>{console.log(data)})
