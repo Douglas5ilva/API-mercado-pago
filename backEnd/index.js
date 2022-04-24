@@ -29,7 +29,7 @@ app.get('/creat-order', async (req, res) => {
 
     mercadopago.preferences.create(preference)
     .then(e=>{
-        res.redirect(e.body.sandbox_init_point)
+        res.send(e.body.sandbox_init_point)
     }).catch(err=>{
         console.log(err)
     })
