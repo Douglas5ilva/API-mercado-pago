@@ -8,7 +8,7 @@ app.use(('/creat-order')cors())
 
 app.get('/', (req,res)=>{ res.send('Server is Running...') })
 
-app.post('/creat-order', async (req, res) => {
+app.get('/creat-order', async (req, res) => {
 
     var mercadopago = require('mercadopago');
     mercadopago.configure({
