@@ -1,10 +1,10 @@
 
 
 async function buy(){
-    let data = await fetch('https://api-mercado-pago.vercel.app/creat-order',{
-        method:'POST',
-        mode: 'no-cors'
+    await fetch('https://api-mercado-pago.vercel.app/creat-order', {
+       method:'post',
+       mode: 'no-cors',
     })
-    let main = await data.json()
-    window.location.href = main;
+    .then(res=>res)
+    .then(data=>{console.log(data)})
 }
